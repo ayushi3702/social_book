@@ -1,0 +1,6 @@
+mkvirtualenv envayushi
+django-admin startproject social_book
+cd social_book
+python manage.py runserver
+
+Python manage.py startapp user
