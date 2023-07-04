@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopazone | Profile</title>
+    <link rel="shortcut icon" href="Images/Logo/Shopazone Logo 1.png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Connecting CSS to HTML -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+
+    <style>
+      form input{
+        width: 100%;
+        height: 40px;
+        margin: 10px 0;
+        padding: 0 10px;
+        border: 1px solid #ccc;
+      }
+      form .btn{
+        width: 100%;
+        border: none;
+        cursor: pointer;
+        margin: 10px 0;
+      }
+      form .btn:focus{
+        outline: none;
+      }
+      form a{
+        font-size: 12px;
+      }
+      body{
+        background-color: beige;
+      }
+      .btn{
+        border-radius: 10px;
+        background-color: pink;
+      }
+    </style>
+    
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="Images/Logo/Shopazone Logo 1.png" width="120px" height="60px" alt="Logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-black" style="background-color: rgb(216, 215, 215);" type="submit">Search</button>
+          </form>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" type="button" href="signup.html">Login/SignUp</a>
+              </li>
+               <li class="nav-item">
+                <a class="nav-link" type="button" href="cart.html">Cart</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="notification.html">Notification</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="downloadapp.html">Download App</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> -->
+        <!-- nav end -->
+
+      <div class="main-bg-6" style="padding: 60px;">
+        <div class="profile-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="text-center pt-5">Not a member? Signup now</h3>
+                        <form>
+                            <input type="text" placeholder="Username" name="Created Username">
+                            <input type="email" placeholder="Email ID" name="Email ID">
+                            <input type="password" placeholder="Password" name="Created Password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="text-center pt-5">Login</h3>
+                        <form >
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <input type="checkbox" style="width: 10%; height: auto; float: left; margin-top: 41px;"><label style="margin-top: 35px;">Remember Me</label>
+                            <button type="submit" class="btn" onclick="showAlert()">Login</button>
+                            <a href="">Forgot Password?</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+         <!-- Footer -->
+         <!-- <footer id="footer">
+          <div class="container">
+              <div class="logo">
+                  <img src="Images/Logo/Shopazone Logo 1.png" width="150px" height="100px" alt="logo">
+                  <div class="row">
+                      <div class="col-md-3 text-white">
+                        <h4>Download Our App</h4>
+                          <p>Download our app on android and ios phone</p>
+                          <a href="downloadapp.html"><img src="Images/Brand/Google Play Store & Apple App Store Logo 1.png" alt="Image" width="100%" height="100%"></a>
+                      </div>
+                      <div class="col-md-3">
+                          <h6 class="text-white">About</h6>
+                          <ul type="none">
+                              <li><a href="about.html" class="text-white">About Us</a></li>
+                              <li><a href="notification.html" class="text-white">Notifications</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-md-3">
+                          <h6 class="text-white">Policy</h6>
+                          <ul type="none">
+                              <li><a href="file/retrun-exchange policy.pdf" target="_blank" class="text-white">Return & Exchange Policy</a></li>
+                          </ul>
+                      </div>
+                      <div class="col-md-3">
+                          <h6 class="text-white">Contact Us</h6>
+                          <ul type="none" class="d-flex">
+                              <li><a href="mailto:ayushipd02@gmail.com" class="text-white"><i class="fa-regular fa-envelope fa-2x"></i></a></li>
+                              <li><a href="tel:+8668255280" class="text-white"><i class="fa-solid fa-phone fa-2x"></i></a></li>
+                              <li><a href="https://wa.me/+8668255280" class="text-white"><i class="fa-brands fa-whatsapp fa-2x"></i></a></li>
+                              <li><a href="https://www.linkedin.com/in/ayushi-prasad-9631341b9/" class="text-white"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <hr>
+                  <div class="copyright">
+                      <p class="text-white text-center">&copy: Copyright 2022 CompanyName. All rights reserved &reg;</p>
+                  </div>
+              </div>
+          </div>
+        </footer> -->
+
+    <script src="main.js"></script>
+
+    <script>
+        function showAlert() {
+            alert ("You are successfully logged in!");
+        }
+    </script>
+
+    <!-- JQuery CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
