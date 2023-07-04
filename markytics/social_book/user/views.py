@@ -9,7 +9,7 @@ from django.contrib.auth.models import User
 # Create your views here.
 
 def home(request):
-    return render(request, 'page/home.html')
+    return render(request, 'user/home.html')
 
 def registeruser(request):
     form = UserCreationForm()
@@ -26,11 +26,11 @@ def registeruser(request):
             return HttpResponse('Error Occured')
 
     context = {'form': form}
-    return render(request, 'page/register.html', context)
+    return render(request, 'user/register.html', context)
 
 def loginuser(request):
 
-    page = 'login'
+    user = 'login'
 
     if request.user.is_authenticated:
         return redirect('home')
@@ -45,8 +45,8 @@ def loginuser(request):
         else:
             return HttpResponse('Invalid username or password')
 
-    context = {'page': page}
-    return render(request, 'page/login.html', context)
+    context = {'user': user}
+    return render(request, 'user/login.html', context)
 
 def logoutuser(request):
     logout(request)
